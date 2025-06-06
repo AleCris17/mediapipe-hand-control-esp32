@@ -19,8 +19,8 @@ L'obiettivo è dimostrare un flusso di lavoro efficiente per un'applicazione di 
 1.  **Webcam USB:** Sorgente video primaria.
 2.  **FFmpeg:** Utilizzato per catturare il flusso video dalla webcam, specificare il formato e la risoluzione, e inviarlo a un server RTSP.
 3.  **Mediamtx:** Funge da server RTSP locale, ricevendo lo stream da FFmpeg e rendendolo disponibile per la connessione da parte di client (come lo script Python).
-4.  **Script Python (PC):**
-6.  **ESP32:**
+4.  **Script Python (PC):** Fungerà da client del sistema.
+6.  **ESP32:** Renderà disponibli gli stati del sistema tramite un Server Web.
 
 ## Prerequisiti Software
 
@@ -97,7 +97,7 @@ L'obiettivo è dimostrare un flusso di lavoro efficiente per un'applicazione di 
 
 3.  **Terminale 3 (PyCharm - Ambiente `.venv_` Attivo):** Eseguire lo script principale del sistema.
     ```bash
-    # Navigare in codice_python/
+    # Nell'ambiente virtuale (.venv)/
     python det.py
     ```
     *Si aprirà una finestra OpenCV mostrando il video con la predizione del gesto. Lo stato verrà inviato in tempo reale all'ESP32.*
