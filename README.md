@@ -12,7 +12,7 @@ Questo progetto implementa un sistema per il riconoscimento in tempo reale dello
 
 Il flusso video viene gestito tramite una pipeline RTSP locale (utilizzando FFmpeg e Mediamtx) per garantire flessibilità e disaccoppiamento. Uno script Python si occupa di leggere lo stream, eseguire l'inferenza con MediaPipe, e inviare lo stato del gesto riconosciuto a un ESP32. Il dispositivo hardware, a sua volta, visualizza lo stato ricevuto sia sul Serial Monitor sia su una pagina web servita dal dispositivo stesso.
 
-L'obiettivo è dimostrare un flusso di lavoro efficiente per un'applicazione di Computer Vision in tempo reale, integrando un modello IA allo stato dell'arte con un dispositivo IoT.
+L'obiettivo è dimostrare un flusso di lavoro efficiente per un'applicazione di Computer Vision in tempo reale, integrando un modello IA con un dispositivo IoT.
 
 ## Componenti Principali del Sistema
 
